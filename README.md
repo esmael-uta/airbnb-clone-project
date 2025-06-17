@@ -35,3 +35,36 @@ In this project, each team member contributes to the development and success of 
 ---
 
 Each role plays a vital part in delivering a functional, secure, and user-centric software system.
+
+## Technology Stack
+
+The project utilizes a modern technology stack to ensure scalability, maintainability, and performance. Below is a list of the key technologies used and their purposes:
+
+### 1. Django
+**Purpose**: A high-level Python web framework used for rapid development of secure and maintainable web applications. Handles backend logic, routing, authentication, and admin interface.
+
+### 2. PostgreSQL
+**Purpose**: A powerful, open-source relational database management system (RDBMS) used to store and manage all structured data in the project.
+
+### 3. HTML, CSS, JavaScript
+**Purpose**: Core web technologies used to build and style the frontend of the application, ensuring interactivity and a user-friendly interface.
+
+### 4. Bootstrap
+**Purpose**: A frontend framework used to create responsive and visually appealing web interfaces with minimal custom CSS.
+
+### 5. Pillow
+**Purpose**: A Python imaging library used for image processing tasks, such as uploading and resizing user profile pictures or document scans.
+
+### 6. SQLite (for development)
+**Purpose**: A lightweight, file-based database used during local development for simplicity before switching to PostgreSQL in production.
+
+### 7. Git & GitHub
+**Purpose**: Version control system and hosting platform for managing source code, tracking changes, and collaborating within the team.
+
+### 8. Visual Studio Code
+**Purpose**: The primary code editor used by the team for writing and debugging project code efficiently.
+
+---
+
+These technologies were chosen to support rapid development, ease of collaboration, and robust system design.
+
