@@ -221,3 +221,25 @@ Payment processing is integrated with trusted third-party services. Sensitive fi
 **Importance**: Protects users' payment details and builds trust in the platform’s financial transactions.
 
 By implementing these security measures, the backend remains resilient against common web threats while ensuring users' data and experience remain safe and reliable.
+
+
+## 🚀 CI/CD Pipeline
+
+### What is CI/CD?
+
+CI/CD stands for **Continuous Integration** and **Continuous Deployment/Delivery**. It is a set of practices that automate the integration of code changes, testing, and deployment processes. Continuous Integration ensures that code changes are automatically tested and merged regularly, while Continuous Deployment/Delivery automates the release of those changes to production or staging environments.
+
+### Why It Matters
+
+Implementing CI/CD in the Airbnb Clone project streamlines the development workflow, reduces human error, and ensures faster and more reliable releases. Every code push is automatically tested and deployed, helping maintain high-quality standards and minimizing downtime or broken features in production.
+
+### Tools Used
+
+- **GitHub Actions**: Automates tasks such as running tests, linting, and deploying the backend when code is pushed to the repository.
+- **Docker**: Containerizes the application for consistent environments across development, testing, and production.
+- **Heroku / AWS / Render (optional)**: Used for deploying the backend application.
+- **PostgreSQL**: As the production-ready relational database.
+- **Celery + Redis**: Integrated in the pipeline for asynchronous tasks like email notifications and background jobs.
+
+These tools help maintain agility, improve collaboration, and ensure the backend services of the Airbnb Clone project are reliable and production-ready.
+
