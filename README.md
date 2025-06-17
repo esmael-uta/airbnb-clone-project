@@ -62,3 +62,98 @@ The Airbnb Clone backend is built using a robust set of modern technologies that
 These technologies are selected to ensure high performance, developer productivity, and a seamless user experience on the platform.
 
 
+## Database Design
+
+This section outlines the core entities in the Airbnb Clone project and how they relate to one another. The design ensures that data is structured efficiently to support all key features like user management, property listings, bookings, payments, and reviews.
+
+### 1. Users
+Represents both guests and hosts on the platform.
+
+**Key Fields:**
+- `id`: Unique identifier for the user.
+- `username`: The user's chosen username.
+- `email`: Email address for login and communication.
+- `password`: Hashed password for secure authentication.
+- `is_host`: Boolean flag indicating if the user can list properties.
+
+**Relationships:**
+- A user can own multiple properties.
+- A user can make multiple bookings.
+- A user can leave multiple reviews.
+
+---
+
+### 2. Properties
+Represents listings created by hosts.
+
+**Key Fields:**
+- `id`: Unique identifier for the property.
+- `owner`: Foreign key linking to the `Users` table.
+- `title`: Title of the property.
+- `description`: Detailed description of the property.
+- `location`: Address or city where the property is located.
+
+**Relationships:**
+- A property belongs to one user (host).
+- A property can have many bookings.
+- A property can receive multiple reviews.
+
+---
+
+### 3. Bookings
+Represents reservations made by users.
+
+**Key Fields:**
+- `id`: Unique identifier for the booking.
+- `user`: Foreign key linking to the `Users` table.
+- `property`: Foreign key linking to the `Properties` table.
+- `check_in`: Check-in date.
+- `check_out`: Check-out date.
+
+**Relationships:**
+- A booking is made by one user for one property.
+- Each booking can be linked to a single payment.
+
+---
+
+### 4. Payments
+Handles all transaction records.
+
+**Key Fields:**
+- `id`: Unique identifier for the payment.
+- `booking`: Foreign key linking to the `Bookings` table.
+- `amount`: Total amount paid.
+- `payment_status`: Status of the payment (e.g., Completed, Pending).
+- `timestamp`: Time the payment was processed.
+
+**Relationships:**
+- Each payment is tied to one booking.
+
+---
+
+### 5. Reviews
+Stores user feedback for properties.
+
+**Key Fields:**
+- `id`: Unique identifier for the review.
+- `user`: Foreign key linking to the `Users` table.
+- `property`: Foreign key linking to the `Properties` table.
+- `rating`: Numeric rating (e.g., 1 to 5).
+- `comment`: Textual review provided by the user.
+
+**Relationships:**
+- A review is written by a user for a specific property.
+- A property can have many reviews from different users.
+
+---
+
+### Entity Relationship Summary
+
+- One **User** can list multiple **Properties**.
+- One **User** can make multiple **Bookings**.
+- One **Booking** is for one **Property** and made by one **User**.
+- One **Booking** can have one **Payment**.
+- One **User** can leave multiple **Reviews** on different **Properties**.
+- One **Property** can have many **Bookings** and **Reviews**.
+
+This schema is designed to support efficient querying and data integrity while reflecting the real-world structure of an online rental platform like Airbnb.
