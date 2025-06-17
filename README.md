@@ -184,3 +184,40 @@ Incorporates indexing and caching to enhance performance and minimize database l
 Provides comprehensive API documentation using the OpenAPI standard and GraphQL Playground. This helps developers understand and interact with the backend efficiently.
 
 Each feature plays a vital role in creating a complete and realistic online rental experience similar to Airbnb, ensuring usability, scalability, and security.
+
+
+## 🔐 API Security
+
+Securing the backend APIs is essential to protect sensitive data, ensure platform integrity, and maintain user trust. The following key security measures are implemented in the Airbnb Clone project:
+
+### 1. **Authentication**
+Authentication ensures that only verified users can access the system. We implement JWT (JSON Web Tokens) or token-based authentication to validate users upon login. This prevents unauthorized access and keeps user sessions secure.
+
+**Importance**: Protects user accounts and restricts access to personal information like bookings, payment details, and profile data.
+
+### 2. **Authorization**
+Authorization controls what authenticated users can do within the system. Role-based access control (RBAC) is applied to differentiate between guests, hosts, and admin users, ensuring that users can only access resources they are permitted to.
+
+**Importance**: Prevents users from accessing or modifying other users' data or admin functionalities.
+
+### 3. **Rate Limiting**
+Rate limiting restricts the number of API requests a user can make within a given timeframe. This helps mitigate denial-of-service (DoS) attacks and abuse of the API.
+
+**Importance**: Ensures system stability and protects against spam, brute force login attempts, and bot traffic.
+
+### 4. **Data Validation & Sanitization**
+All input data is validated and sanitized to prevent injection attacks such as SQL Injection and Cross-Site Scripting (XSS).
+
+**Importance**: Maintains data integrity and protects the database and users from malicious input.
+
+### 5. **HTTPS Enforcement**
+All API communications are encrypted using HTTPS, which protects data in transit from being intercepted or tampered with.
+
+**Importance**: Ensures that sensitive information like login credentials and payment data remains confidential.
+
+### 6. **Secure Payment Handling**
+Payment processing is integrated with trusted third-party services. Sensitive financial data is never stored directly in the database.
+
+**Importance**: Protects users' payment details and builds trust in the platform’s financial transactions.
+
+By implementing these security measures, the backend remains resilient against common web threats while ensuring users' data and experience remain safe and reliable.
