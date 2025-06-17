@@ -38,33 +38,27 @@ Each role plays a vital part in delivering a functional, secure, and user-centri
 
 ## Technology Stack
 
-The project utilizes a modern technology stack to ensure scalability, maintainability, and performance. Below is a list of the key technologies used and their purposes:
+The Airbnb Clone backend is built using a robust set of modern technologies that ensure scalability, maintainability, and performance.
 
-### 1. Django
-**Purpose**: A high-level Python web framework used for rapid development of secure and maintainable web applications. Handles backend logic, routing, authentication, and admin interface.
+### 🔧 Core Technologies
 
-### 2. PostgreSQL
-**Purpose**: A powerful, open-source relational database management system (RDBMS) used to store and manage all structured data in the project.
+- **Django**: A high-level Python web framework used to build and manage the backend. It handles URL routing, request/response cycles, and integrates well with databases.
+- **Django REST Framework (DRF)**: An extension of Django that simplifies the creation of RESTful APIs, allowing CRUD operations and user interactions over HTTP.
+- **PostgreSQL**: A powerful, open-source relational database used to store all structured data such as users, properties, bookings, payments, and reviews.
+- **GraphQL**: A flexible query language for APIs that allows clients to specify exactly what data they need, reducing over-fetching and under-fetching.
+- **Celery**: A task queue used for asynchronous operations like sending confirmation emails, processing payments, and other background jobs.
+- **Redis**: An in-memory data store used as a caching mechanism to improve performance and as a message broker for Celery.
 
-### 3. HTML, CSS, JavaScript
-**Purpose**: Core web technologies used to build and style the frontend of the application, ensuring interactivity and a user-friendly interface.
+### 🐳 DevOps & Infrastructure
 
-### 4. Bootstrap
-**Purpose**: A frontend framework used to create responsive and visually appealing web interfaces with minimal custom CSS.
+- **Docker**: Ensures the backend runs in isolated containers for consistency across development, testing, and production environments.
+- **CI/CD Pipelines**: Automated Continuous Integration and Continuous Deployment pipelines are set up to streamline testing and deployment, ensuring faster and safer delivery of new features.
 
-### 5. Pillow
-**Purpose**: A Python imaging library used for image processing tasks, such as uploading and resizing user profile pictures or document scans.
+### 📄 Documentation
 
-### 6. SQLite (for development)
-**Purpose**: A lightweight, file-based database used during local development for simplicity before switching to PostgreSQL in production.
+- **OpenAPI (Swagger)**: Provides interactive and machine-readable documentation for RESTful APIs.
+- **GraphQL Playground**: A user-friendly interface to test and explore GraphQL queries and mutations.
 
-### 7. Git & GitHub
-**Purpose**: Version control system and hosting platform for managing source code, tracking changes, and collaborating within the team.
+These technologies are selected to ensure high performance, developer productivity, and a seamless user experience on the platform.
 
-### 8. Visual Studio Code
-**Purpose**: The primary code editor used by the team for writing and debugging project code efficiently.
-
----
-
-These technologies were chosen to support rapid development, ease of collaboration, and robust system design.
 
