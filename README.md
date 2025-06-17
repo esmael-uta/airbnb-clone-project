@@ -157,3 +157,30 @@ Stores user feedback for properties.
 - One **Property** can have many **Bookings** and **Reviews**.
 
 This schema is designed to support efficient querying and data integrity while reflecting the real-world structure of an online rental platform like Airbnb.
+
+## Feature Breakdown
+
+This section outlines the key features implemented in the Airbnb Clone backend, each designed to replicate core functionalities of the real Airbnb platform.
+
+### 🔐 User Management
+Handles user registration, login, and profile management. It supports both guests and hosts, enabling personalized access to different parts of the system. Authentication ensures secure access to user data and actions.
+
+### 🏡 Property Management
+Allows hosts to create, update, retrieve, and delete property listings. Each property includes details like title, description, location, and images, providing a complete view for potential guests.
+
+### 📅 Booking System
+Enables users to book properties by selecting check-in and check-out dates. It manages booking conflicts, calculates duration, and links bookings to both users and properties for tracking.
+
+### 💳 Payment Processing
+Facilitates secure payment transactions for bookings. This system records transaction details and integrates with external services for real-time payment handling, ensuring financial data integrity.
+
+### ⭐ Review System
+Allows guests to leave reviews and ratings on properties after their stay. Reviews help maintain transparency, build trust in listings, and guide other users in decision-making.
+
+### ⚡ Data Optimization
+Incorporates indexing and caching to enhance performance and minimize database load. These optimizations ensure quick data retrieval, especially for frequently accessed endpoints.
+
+### 📜 API Documentation
+Provides comprehensive API documentation using the OpenAPI standard and GraphQL Playground. This helps developers understand and interact with the backend efficiently.
+
+Each feature plays a vital role in creating a complete and realistic online rental experience similar to Airbnb, ensuring usability, scalability, and security.
