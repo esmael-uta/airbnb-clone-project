@@ -78,7 +78,19 @@ A well-designed booking system reduces friction in the user journey, increases c
 ### Importance of Identifying Design Properties
 Identifying specific design properties from a mockup is crucial. It ensures that developers can accurately translate the designer's vision into code, maintaining visual consistency across the entire application. This leads to a more professional, cohesive user experience and speeds up development by removing guesswork.
 
----
+## Project Roles and Responsibilities
+
+| Role | Responsibilities |
+| :--- | :--- |
+| **Project Manager** | Oversees timeline, coordinates team, manages deliverables. |
+| **Frontend Developers** | Implements UI components, ensures responsive design. |
+| **Backend Developers** | Builds APIs, manages database, implements business logic. |
+| **Designers** | Creates mockups, maintains design system, ensures UX quality. |
+| **QA/Testers** | Writes test cases, performs testing, reports bugs. |
+| **DevOps Engineers** | Manages deployment, CI/CD pipeline, server infrastructure. |
+| **Product Owner** | Defines requirements, prioritizes features, represents stakeholders. |
+| **Scrum Master** | Facilitates agile processes, removes blockers, organizes meetings. |
+
 
 ## Technology Stack
 
