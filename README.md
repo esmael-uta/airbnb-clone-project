@@ -36,8 +36,6 @@ In this project, each team member contributes to the development and success of 
 
 Each role plays a vital part in delivering a functional, secure, and user-centric software system.
 
----
-
 ## UI/UX Design Planning
 
 ### Design Goals
