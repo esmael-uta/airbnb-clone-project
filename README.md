@@ -92,6 +92,29 @@ Identifying specific design properties from a mockup is crucial. It ensures that
 | **Scrum Master** | Facilitates agile processes, removes blockers, organizes meetings. |
 
 
+## UI Component Patterns
+
+### Planned Components
+
+* **Navbar**
+    * Logo
+    * Search bar
+    * User navigation
+    * Responsive menu
+* **Property Card**
+    * Property image
+    * Basic details (price, location, rating)
+    * Favorite button
+    * Responsive layout
+* **Footer**
+    * Site links
+    * Company information
+    * Social media links
+    * Copyright information
+
+Each component will be designed for reusability and consistency across the application.
+
+
 ## Technology Stack
 
 The Airbnb Clone backend is built using a robust set of modern technologies that ensure scalability, maintainability, and performance.
